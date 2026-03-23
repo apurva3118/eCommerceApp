@@ -7,6 +7,11 @@ import { settings } from "./settings";
 import { share } from "./share";
 import { contact } from "./contact";
 import { forwardarrow } from "./forwardarrow";
+import { profile } from "./profile";
+import { bell } from "./bell";
+import { searchicon } from "./searchicon";
+import { heart } from './heart';
+import { backarrow } from './backarrow';
 export {
     home,
     myprofile,
@@ -16,5 +21,10 @@ export {
     settings,
     share,
     contact,
-    forwardarrow
+    forwardarrow,
+    profile,
+    bell,
+    searchicon,
+    heart,
+    backarrow
 }

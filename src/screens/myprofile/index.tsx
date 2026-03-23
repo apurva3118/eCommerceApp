@@ -9,18 +9,33 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { SvgXml } from 'react-native-svg';
-import { forwardarrow } from '../../assets/svgs';
+import { contact, forwardarrow, help, profile, settings, share } from '../../assets/svgs';
+import { IMenuItemProps } from './myprofile';
+import { styles } from './styles';
 const { width, height } = Dimensions.get('window');
 
-const MenuItem = ({ title }) => {
+const MenuItem = ({ title, icon }: IMenuItemProps) => {
   return (
     <TouchableOpacity style={styles.menuItem}>
-      <Text style={styles.menuText}>{title}</Text>
+
+      {/* LEFT SIDE (Icon + Text) */}
+      <View style={styles.leftSection}>
+        <SvgXml xml={icon} />
+        <Text style={styles.menuText}>{title}</Text>
+      </View>
+
+      {/* RIGHT SIDE (Arrow) */}
       <SvgXml xml={forwardarrow} />
     </TouchableOpacity>
   );
 };
-
+const MENU_ITEMS = [
+  { id: 1, title: 'Profile', icon: profile },
+  { id: 2, title: 'Setting', icon: settings },
+  { id: 3, title: 'Contact', icon: contact },
+  { id: 4, title: 'Share App', icon: share },
+  { id: 5, title: 'Help', icon: help },
+];
 const MyProfile = () => {
   return (
     <SafeAreaView style={styles.container}>
@@ -38,13 +53,10 @@ const MyProfile = () => {
           <Text style={styles.email}>Sunny_Koelpin45@hotmail.com</Text>
         </View>
 
-        {/* Menu */}
         <View style={styles.menuContainer}>
-          <MenuItem title="Profile" />
-          <MenuItem title="Setting" />
-          <MenuItem title="Contact" />
-          <MenuItem title="Share App" />
-          <MenuItem title="Help" />
+          {MENU_ITEMS.map(item => (
+            <MenuItem key={item.id} title={item.title} icon={item.icon} />
+          ))}
         </View>
 
       </View>
@@ -61,75 +73,3 @@ const MyProfile = () => {
 };
 
 export default MyProfile;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#F7F7F7',
-  },
-
-  topSection: {
-    flex: 1,
-    paddingHorizontal: width * 0.05,
-    paddingTop: height * 0.02,
-  },
-
-  header: {
-    alignItems: 'center',
-    paddingBottom: height * 0.025,
-  },
-
-  avatar: {
-    width: width * 0.25,
-    height: width * 0.25,
-    borderRadius: (width * 0.25) / 2,
-  },
-
-  name: {
-    fontSize: width * 0.06,
-    fontWeight: '600',
-    paddingTop: 8,
-  },
-
-  email: {
-    fontSize: width * 0.035,
-    color: 'gray',
-    paddingTop: 4,
-  },
-
-  menuContainer: {
-    paddingTop: height * 0.01,
-    gap: height * 0.015, // ✅ clean spacing instead of margin
-  },
-
-  menuItem: {
-    backgroundColor: '#EDEDED',
-    paddingVertical: height * 0.02,
-    paddingHorizontal: width * 0.04,
-    borderRadius: 12,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-
-  menuText: {
-    fontSize: width * 0.04,
-    fontWeight: '500',
-  },
-
-  arrow: {
-    fontSize: width * 0.05,
-    color: '#555',
-  },
-
-  bottomSection: {
-    paddingBottom: height * 0.03,
-    alignItems: 'center',
-  },
-
-  signOutText: {
-    color: 'orange',
-    fontSize: width * 0.045,
-    fontWeight: '600',
-  },
-});
