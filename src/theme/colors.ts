@@ -20,6 +20,7 @@ export const colors:IColorProp = {
         darkTxtColor:'#484848',
         borderLine:'#A9A6A6',
         greyBack:'#D3D0D0',
+        orange:'#F55F1F'
 
 
 }

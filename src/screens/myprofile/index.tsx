@@ -2,29 +2,25 @@ import React from 'react';
 import {
   View,
   Text,
-  StyleSheet,
   Image,
   TouchableOpacity,
-  Dimensions,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { SvgXml } from 'react-native-svg';
 import { contact, forwardarrow, help, profile, settings, share } from '../../assets/svgs';
 import { IMenuItemProps } from './myprofile';
 import { styles } from './styles';
-const { width, height } = Dimensions.get('window');
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../../utils/linking';
 
-const MenuItem = ({ title, icon }: IMenuItemProps) => {
+const MenuItem = ({ title, icon, onPress }: IMenuItemProps) => {
   return (
-    <TouchableOpacity style={styles.menuItem}>
-
-      {/* LEFT SIDE (Icon + Text) */}
+    <TouchableOpacity style={styles.menuItem} onPress={onPress}>
       <View style={styles.leftSection}>
         <SvgXml xml={icon} />
         <Text style={styles.menuText}>{title}</Text>
       </View>
-
-      {/* RIGHT SIDE (Arrow) */}
       <SvgXml xml={forwardarrow} />
     </TouchableOpacity>
   );
@@ -37,6 +33,12 @@ const MENU_ITEMS = [
   { id: 5, title: 'Help', icon: help },
 ];
 const MyProfile = () => {
+  const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+  const handleMenuPress = (title: string) => {
+    if (title === 'Setting') {
+      navigation.navigate('Settings');
+    }
+  };
   return (
     <SafeAreaView style={styles.container}>
 
@@ -55,13 +57,12 @@ const MyProfile = () => {
 
         <View style={styles.menuContainer}>
           {MENU_ITEMS.map(item => (
-            <MenuItem key={item.id} title={item.title} icon={item.icon} />
+            <MenuItem key={item.id} title={item.title} icon={item.icon} onPress={() => handleMenuPress(item.title)} />
           ))}
         </View>
 
       </View>
 
-      {/* SIGN OUT (fixed bottom spacing without margin) */}
       <View style={styles.bottomSection}>
         <TouchableOpacity>
           <Text style={styles.signOutText}>Sign Out</Text>

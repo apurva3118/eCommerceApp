@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { FlatList, Pressable, ScrollView, View } from 'react-native';
 import Header from '../../components/header';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { styles } from './style';
@@ -11,6 +11,8 @@ import Typography from '../../components/typography';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../utils/linking';
+import { Strings } from '../../constants/strings';
+
 const Home = () => {
   type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
   const navigation = useNavigation<NavigationProp>();
@@ -28,13 +30,11 @@ const Home = () => {
 
         <SearchBar />
         <OfferCarousel />
-
-        {/* Featured */}
         <View style={styles.featureRow}>
-          <Typography style={styles.featureTitle}>Featured</Typography>
+          <Typography style={styles.featureTitle}>{Strings.featured}</Typography>
 
           <Pressable onPress={() => navigation.navigate('SeeAll', { type: 'featured' })}>
-            <Typography style={styles.seeAll}>See All</Typography>
+            <Typography style={styles.seeAll}>{Strings.seeAll}</Typography>
           </Pressable>
         </View>
 
@@ -59,13 +59,11 @@ const Home = () => {
             </View>
           )}
         />
-
-        {/* Most Popular */}
         <View style={styles.featureRow}>
-          <Typography style={styles.featureTitle}>Most Popular</Typography>
+          <Typography style={styles.featureTitle}>{Strings.mostPopular}</Typography>
 
           <Pressable onPress={() => console.log('See All pressed')}>
-            <Typography style={styles.seeAll}>See All</Typography>
+            <Typography style={styles.seeAll}>{Strings.seeAll}</Typography>
           </Pressable>
         </View>
         <FlatList

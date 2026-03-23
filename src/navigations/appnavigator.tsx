@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import BottomTabs from './bottomTabs';
 import SeeAllScreen from '../screens/seeall';
 import { RootStackParamList } from '../utils/linking';
+import { Settings } from '../screens';
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function AppNavigator() {
@@ -21,6 +22,10 @@ export default function AppNavigator() {
       <Stack.Screen
         name="SeeAll"
         component={SeeAllScreen}
+      />
+       <Stack.Screen
+        name="Settings"
+        component={Settings}
       />
     </Stack.Navigator>
   );

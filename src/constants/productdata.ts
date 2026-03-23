@@ -137,3 +137,31 @@ export const AllProucts: ProductItem[] = [
         size: [1],
     },
 ];
+export const SETTINGS_DATA = [
+    {
+        id: '1',
+        title: 'Notification',
+        icon: require('../assets/images/notification.png'),
+    },
+    {
+        id: '2',
+        title: 'Language',
+        icon: require('../assets/images/language.png'),
+        rightText: 'English',
+    },
+    {
+        id: '3',
+        title: 'Privacy',
+        icon: require('../assets/images/privacy.png'),
+    },
+    {
+        id: '4',
+        title: 'Help Center',
+        icon: require('../assets/images/helpcenter.png'),
+    },
+    {
+        id: '5',
+        title: 'About us',
+        icon: require('../assets/images/aboutus.png'),
+    },
+];

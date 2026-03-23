@@ -19,5 +19,6 @@ export interface IColorProp {
         deepGrey:string;
         darkTxtColor:string;
         borderLine:string;
-        greyBack:string
+        greyBack:string;
+        orange:string
 }

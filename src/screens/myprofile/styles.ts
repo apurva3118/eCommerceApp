@@ -1,11 +1,12 @@
 import { StyleSheet, Dimensions } from 'react-native';
+import { colors } from '../../theme/colors';
 
 const { width, height } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F7F7F7',
+        backgroundColor: colors.white,
     },
 
     topSection: {
@@ -33,7 +34,7 @@ export const styles = StyleSheet.create({
 
     email: {
         fontSize: width * 0.035,
-        color: 'gray',
+        color: colors.txtColor,
         paddingTop: 4,
     },
 
@@ -43,7 +44,7 @@ export const styles = StyleSheet.create({
     },
 
     menuItem: {
-        backgroundColor: '#EDEDED',
+        backgroundColor: colors.cardShadow,
         paddingVertical: height * 0.02,
         paddingHorizontal: width * 0.04,
         borderRadius: 12,
@@ -63,7 +64,7 @@ export const styles = StyleSheet.create({
     },
 
     signOutText: {
-        color: 'orange',
+        color: colors.orange,
         fontSize: width * 0.045,
         fontWeight: '600',
     },
