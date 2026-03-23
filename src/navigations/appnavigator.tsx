@@ -1,11 +1,10 @@
-// navigation/AppNavigator.tsx
-
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import BottomTabs from './bottomTabs';
 import SeeAllScreen from '../screens/seeall';
 import { RootStackParamList } from '../utils/linking';
 import { Settings } from '../screens';
+import ProductDetails from '../screens/productdetails';
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function AppNavigator() {
@@ -23,9 +22,13 @@ export default function AppNavigator() {
         name="SeeAll"
         component={SeeAllScreen}
       />
-       <Stack.Screen
+      <Stack.Screen
         name="Settings"
         component={Settings}
+      />
+      <Stack.Screen
+        name="ProductDetails"
+        component={ProductDetails}
       />
     </Stack.Navigator>
   );

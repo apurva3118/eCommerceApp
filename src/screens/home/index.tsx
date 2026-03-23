@@ -50,13 +50,22 @@ const Home = () => {
             gap: 12,
           }}
           renderItem={({ item }) => (
-            <View style={{ width: 160 }}>
+            <Pressable style={{ width: 160 }}>
               <ProductCard
                 title={item.title}
                 price={item.price}
                 image={item.image}
+                description={item.description}
+                onPress={() =>
+                  navigation.navigate('ProductDetails', {
+                    title: item.title,
+                    image: item.image,
+                    price: item.price,
+                    description: item.description,
+                  })
+                }
               />
-            </View>
+            </Pressable>
           )}
         />
         <View style={styles.featureRow}>
@@ -83,6 +92,7 @@ const Home = () => {
                 title={item.title}
                 price={item.price}
                 image={item.image}
+                description={item.description}
               />
             </View>
           )}

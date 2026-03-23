@@ -12,6 +12,7 @@ import { bell } from "./bell";
 import { searchicon } from "./searchicon";
 import { heart } from './heart';
 import { backarrow } from './backarrow';
+import { star } from "./star";
 export {
     home,
     myprofile,
@@ -26,5 +27,6 @@ export {
     bell,
     searchicon,
     heart,
-    backarrow
+    backarrow,
+    star
 }

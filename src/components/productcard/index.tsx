@@ -14,7 +14,7 @@ import { styles } from "./styles";
 import { IProductCardProps } from "./productcard";
 import Typography from "../typography";
 
-const ProductCard = ({ title, price, image, onPress }: IProductCardProps) => {
+const ProductCard = ({ title, price, image, description, onPress }: IProductCardProps) => {
   return (
     <Pressable style={styles.card} onPress={onPress}>
 
