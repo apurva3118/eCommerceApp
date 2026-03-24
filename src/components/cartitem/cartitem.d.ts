@@ -7,4 +7,5 @@ export interface ICartItemProps {
         quantity?: number;
         image: any;
     };
+    showtrack?:boolean
 }

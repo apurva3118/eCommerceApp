@@ -63,6 +63,19 @@ const SearchProducts = () => {
         columnWrapperStyle={styles.columnWrapper}
         contentContainerStyle={styles.contentContainer}
         showsVerticalScrollIndicator={false}
+        ListHeaderComponent={
+          search.trim().length > 0 ? (
+            <View style={styles.resultHeader}>
+              <Typography style={styles.resultText}>
+                Results for "{search}"
+              </Typography>
+
+              <Typography style={styles.resultCount}>
+                {filteredProducts.length} Results Found
+              </Typography>
+            </View>
+          ) : null
+        }
         ListEmptyComponent={
           <View style={styles.emptyContainer}>
             <Typography style={styles.emptyText}>No products found</Typography>

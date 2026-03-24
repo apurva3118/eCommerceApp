@@ -59,7 +59,7 @@ export const styles = StyleSheet.create({
     },
 
     bottomSection: {
-        paddingBottom: height * 0.03,
+        paddingBottom: height * 0.01,
         alignItems: 'center',
     },
 

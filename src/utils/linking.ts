@@ -12,4 +12,5 @@ export type RootStackParamList = {
   };
   SearchProducts: undefined;
   Checkout:undefined;
+  Orders:undefined
 };

@@ -5,6 +5,7 @@ import SearchProducts from "./searchproducts";
 import SeeAllScreen from "./seeall";
 import Settings from "./settings";
 import Checkout from "./checkout";
+import Orders from "./myorders";
 export {
     Home,
     MyProfile,
@@ -12,5 +13,6 @@ export {
     SearchProducts,
     SeeAllScreen,
     Settings,
-    Checkout
+    Checkout,
+    Orders
 };

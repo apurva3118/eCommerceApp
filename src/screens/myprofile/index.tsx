@@ -31,12 +31,16 @@ const MENU_ITEMS = [
   { id: 3, title: 'Contact', icon: contact },
   { id: 4, title: 'Share App', icon: share },
   { id: 5, title: 'Help', icon: help },
+  { id: 6, title: 'My Orders', icon: profile }
 ];
 const MyProfile = () => {
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
-  const handleMenuPress = (title: string) => {
-    if (title === 'Setting') {
+  const handleMenuPress = (id: number) => {
+    if (id === 2) {
       navigation.navigate('Settings');
+    }
+    if (id === 6) {
+      navigation.navigate('Orders');
     }
   };
   return (
@@ -57,7 +61,7 @@ const MyProfile = () => {
 
         <View style={styles.menuContainer}>
           {MENU_ITEMS.map(item => (
-            <MenuItem key={item.id} title={item.title} icon={item.icon} onPress={() => handleMenuPress(item.title)} />
+            <MenuItem key={item.id} title={item.title} icon={item.icon} onPress={() => handleMenuPress(item.id)} />
           ))}
         </View>
 

@@ -8,9 +8,7 @@ export const styles = StyleSheet.create({
         backgroundColor: colors.white,
     },
     bottomBar: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        padding: moderateScale(16),
+        paddingHorizontal: moderateScale(15),
         borderTopWidth: 1,
         borderColor: colors.white,
         backgroundColor: colors.white,

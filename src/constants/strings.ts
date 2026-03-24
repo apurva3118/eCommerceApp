@@ -12,7 +12,8 @@ export const Strings = {
     date: '6:00 pm, Wednesday 20',
     paymentMethod: 'Choose payment method',
     addNew: 'Add new payment method',
-    checkout:"Checkout"
+    checkout:"Checkout",
+    trackorder:"Track Order"
 } as const;
 
 export type StringKey = keyof typeof Strings;

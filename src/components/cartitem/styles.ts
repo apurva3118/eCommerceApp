@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { wp, hp, scaleFont } from '../../constants/layout';
+import { wp, hp, scaleFont, moderateScale } from '../../constants/layout';
 import { colors } from '../../theme/colors';
 
 export const styles = StyleSheet.create({
@@ -78,5 +78,9 @@ export const styles = StyleSheet.create({
         top: hp(10),
         right: wp(19),
         zIndex: 10,
+    },
+    btnStyle: {
+        width: wp(120),
+        height: hp(35)
     },
 });

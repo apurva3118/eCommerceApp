@@ -10,7 +10,8 @@ export interface ProductItem {
     rating: number;
     reviews: number;
     size: (string | number)[];
-    brand?: string
+    brand?: string;
+    orderstatus?: string
 }
 
 export const ProductData: ProductItem[] = [
@@ -90,6 +91,8 @@ export const AllProucts: ProductItem[] = [
         rating: 4.5,
         reviews: 120,
         size: [1],
+        orderstatus: 'Cancel',
+        brand: 'LG'
     },
     {
         id: '2',
@@ -100,6 +103,8 @@ export const AllProucts: ProductItem[] = [
         rating: 4.8,
         reviews: 320,
         size: [6, 7, 8, 9, 10],
+        orderstatus: 'Active',
+        brand: 'H&M'
     },
     {
         id: '3',
@@ -110,6 +115,8 @@ export const AllProucts: ProductItem[] = [
         rating: 4.8,
         reviews: 320,
         size: [6, 7, 8, 9, 10],
+        orderstatus: 'Completed',
+        brand: 'Gap'
     },
     {
         id: '4',
@@ -120,6 +127,8 @@ export const AllProucts: ProductItem[] = [
         rating: 4.5,
         reviews: 120,
         size: [1],
+        orderstatus: 'Completed',
+        brand: 'Rolex'
     },
     {
         id: '5',
@@ -130,6 +139,8 @@ export const AllProucts: ProductItem[] = [
         rating: 4.8,
         reviews: 320,
         size: [6, 7, 8, 9, 10],
+        orderstatus: 'Cancel',
+        brand: 'Nike'
     },
     {
         id: '6',
@@ -140,6 +151,8 @@ export const AllProucts: ProductItem[] = [
         rating: 4.8,
         reviews: 320,
         size: [1],
+        orderstatus: 'Cancel',
+        brand: 'Boat'
     },
 ];
 export const SETTINGS_DATA = [
