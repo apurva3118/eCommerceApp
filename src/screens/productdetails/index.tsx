@@ -5,15 +5,18 @@ import {
     Pressable,
     ScrollView,
     Dimensions,
+    TouchableOpacity,
 } from 'react-native';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { RouteProp, useNavigation, useRoute } from '@react-navigation/native';
 import { RootStackParamList } from '../../utils/linking';
 import { SvgXml } from 'react-native-svg';
-import { heart, backarrow, star } from '../../assets/svgs';
+import { heart, backarrow, star, products } from '../../assets/svgs';
 import Typography from '../../components/typography';
 import { colors } from '../../theme/colors';
 import { styles } from './styles';
+import ButtonPrimary from '../../components/buttonprimary';
+import { Strings } from '../../constants/strings';
 
 type ProductRouteProp = RouteProp<RootStackParamList, 'ProductDetails'>;
 
@@ -72,6 +75,17 @@ const ProductDetails = () => {
                             ))}
                         </View>
 
+                    </View>
+                    <View style={styles.bottomBar}>
+                        <ButtonPrimary
+                            title={Strings.buyNow}
+                            style={styles.btnStyle}
+                            onPress={() => {
+                            }}
+                        />
+                        <TouchableOpacity style={styles.cartButton} >
+                            <SvgXml xml={products} height={24} width={24} />
+                        </TouchableOpacity>
                     </View>
                 </SafeAreaView>
             </ScrollView>

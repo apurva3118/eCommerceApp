@@ -1,5 +1,6 @@
 import { StyleSheet, Dimensions } from 'react-native';
 import { colors } from '../../theme/colors';
+import { moderateScale, wp } from '../../constants/layout';
 
 const { width, height } = Dimensions.get('window');
 const scale = width / 375;
@@ -88,5 +89,25 @@ export const styles = StyleSheet.create({
     sizeText: {
         fontSize: normalize(14),
         fontWeight: '600',
+    },
+    bottomBar: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        padding: moderateScale(16),
+        borderTopWidth: 1,
+        borderColor: colors.white,
+        backgroundColor: colors.white,
+        alignItems: 'center',
+    },
+    btnStyle: {
+        width: wp(260)
+    },
+    cartButton: {
+        width: wp(90),
+        height: wp(55),
+        borderRadius: 28,
+        backgroundColor: colors.cardShadow,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
 });
