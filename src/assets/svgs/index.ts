@@ -15,7 +15,12 @@ import { backarrow } from './backarrow';
 import { star } from "./star";
 import { closeicon } from "./closeicon";
 import { dots } from "./dots";
-import { deleteicon } from "./deleteicon"
+import { deleteicon } from "./deleteicon";
+import { paypal } from "./paypal";
+import { cash } from "./cash";
+import { card } from "./card";
+import { tickmark } from "./tickmark";
+import { plussmall } from "./plussmall";
 export {
     home,
     myprofile,
@@ -34,5 +39,10 @@ export {
     star,
     closeicon,
     dots,
-    deleteicon
+    deleteicon,
+    paypal,
+    cash,
+    card,
+    tickmark,
+    plussmall
 }

@@ -1,4 +1,5 @@
 import { ImageSourcePropType } from "react-native";
+import { card, cash, paypal } from "../assets/svgs";
 
 export interface ProductItem {
     id: string;
@@ -168,4 +169,9 @@ export const SETTINGS_DATA = [
         title: 'About us',
         icon: require('../assets/images/aboutus.png'),
     },
+];
+export const PAYMENT_OPTIONS = [
+    { id: '1', title: 'Paypal', icon: paypal },
+    { id: '2', title: 'Credit Card', icon: card },
+    { id: '3', title: 'Cash', icon: cash },
 ];

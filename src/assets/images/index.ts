@@ -12,5 +12,7 @@ export const images = {
     notification: require('./notification.png'),
     privacy: require('./privacy.png'),
     plus: require('./plus.png'),
-    minus: require('./minus.png')
+    minus: require('./minus.png'),
+    timer: require('./timer.png'),
+    location: require('./location.png')
 };

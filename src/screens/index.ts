@@ -4,11 +4,13 @@ import MyCart from "./mycart";
 import SearchProducts from "./searchproducts";
 import SeeAllScreen from "./seeall";
 import Settings from "./settings";
+import Checkout from "./checkout";
 export {
     Home,
     MyProfile,
     MyCart,
     SearchProducts,
     SeeAllScreen,
-    Settings
+    Settings,
+    Checkout
 };

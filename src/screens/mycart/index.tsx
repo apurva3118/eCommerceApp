@@ -8,8 +8,13 @@ import CartItem from '../../components/cartitem';
 import OrderSummary from '../../components/ordersummary';
 import ButtonPrimary from '../../components/buttonprimary';
 import { Strings } from '../../constants/strings';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../../utils/linking';
+import { useNavigation } from '@react-navigation/native';
 
 const MyCart = () => {
+  type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
+  const navigation = useNavigation<NavigationProp>();
   return (
     <SafeAreaView style={styles.safeArea}>
       <CustomHeader title='Cart' showdots={true} />
@@ -29,6 +34,7 @@ const MyCart = () => {
             title={Strings.checkout}
             style={styles.btnStyle}
             onPress={() => {
+              navigation.navigate('Checkout');
             }}
           />
         </View>

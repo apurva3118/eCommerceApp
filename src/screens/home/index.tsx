@@ -73,7 +73,7 @@ const Home = () => {
         <View style={styles.featureRow}>
           <Typography style={styles.featureTitle}>{Strings.mostPopular}</Typography>
 
-          <Pressable onPress={() => console.log('See All pressed')}>
+          <Pressable onPress={() => navigation.navigate('SeeAll', { type: 'featured' })}>
             <Typography style={styles.seeAll}>{Strings.seeAll}</Typography>
           </Pressable>
         </View>
