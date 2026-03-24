@@ -56,7 +56,7 @@ export const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        paddingTop: 10, // 👈 spacing without margin
+        paddingTop: 10,
     },
 
     dot: {

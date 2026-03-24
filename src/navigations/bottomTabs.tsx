@@ -1,9 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
 import HomeScreen from '../screens/home';
 import SearchScreen from '../screens/searchproducts';
-import ProductsScreen from '../screens/products';
 import ProfileScreen from '../screens/myprofile';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Text } from 'react-native';
@@ -14,6 +12,8 @@ import {
     products,
     search,
 } from '../assets/svgs';
+import MyCart from '../screens/mycart';
+
 const Tab = createBottomTabNavigator();
 
 const Icon = ({ label }: { label: string }) => <Text>{label}</Text>;
@@ -63,8 +63,8 @@ export default function BottomTabs() {
             />
 
             <Tab.Screen
-                name="Products"
-                component={ProductsScreen}
+                name="My Cart"
+                component={MyCart}
                 options={{
                     tabBarIcon: ({ color }) => renderIcon(products, color),
                 }}

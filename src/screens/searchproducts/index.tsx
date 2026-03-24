@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, FlatList, StyleSheet, Pressable } from 'react-native';
-import CustomHeader from '../../components/commonheader';
+import { View, FlatList } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ProductCard from '../../components/productcard';
 import { AllProucts } from '../../constants/productdata';
@@ -9,6 +8,7 @@ import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../utils/linking';
 import SearchBar from '../../components/searchbar';
+import Typography from '../../components/typography';
 
 const SearchProducts = () => {
   const [search, setSearch] = useState('');
@@ -65,7 +65,7 @@ const SearchProducts = () => {
         showsVerticalScrollIndicator={false}
         ListEmptyComponent={
           <View style={styles.emptyContainer}>
-            <Text style={styles.emptyText}>No products found</Text>
+            <Typography style={styles.emptyText}>No products found</Typography>
           </View>
         }
       />

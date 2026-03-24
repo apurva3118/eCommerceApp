@@ -1,9 +1,7 @@
 import React, { useRef, useState } from "react";
 import {
     View,
-    Text,
     Image,
-    StyleSheet,
     Dimensions,
     FlatList,
     ListRenderItem,
@@ -34,11 +32,9 @@ const DATA: IOfferItem[] = [
 
 ];
 
-
 const OfferCarousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const flatListRef = useRef(null);
-
     const renderItem: ListRenderItem<IOfferItem> = ({ item }) => {
         return (
             <View style={styles.card}>
@@ -48,7 +44,7 @@ const OfferCarousel = () => {
                     <Typography variant="P2" style={styles.subtitle}>{item.subtitle}</Typography>
                 </View>
 
-                <Image source={item.image}  style={styles.image} />
+                <Image source={item.image} style={styles.image} />
             </View>
         );
     };
@@ -78,8 +74,6 @@ const OfferCarousel = () => {
                 contentContainerStyle={styles.content}
                 ItemSeparatorComponent={() => <View style={{ width: SPACING }} />}
             />
-
-            {/* Dots */}
             <View style={styles.dotsContainer}>
                 {DATA.map((_, index) => (
                     <View

@@ -18,8 +18,6 @@ const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({
   txtStyle,
 }) => {
 
-
-
   return (
     <View style={styles.wrapper}>
       <TouchableOpacity

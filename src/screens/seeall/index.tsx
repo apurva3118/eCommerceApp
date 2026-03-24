@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, FlatList, StyleSheet, Pressable } from 'react-native';
+import { View, FlatList } from 'react-native';
 import CustomHeader from '../../components/commonheader';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ProductCard from '../../components/productcard';
@@ -8,6 +8,7 @@ import { styles } from './styles'
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../utils/linking';
+import Typography from '../../components/typography';
 
 const SeeAllScreen = () => {
   type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
@@ -49,7 +50,7 @@ const SeeAllScreen = () => {
         showsVerticalScrollIndicator={false}
         ListEmptyComponent={
           <View style={styles.emptyContainer}>
-            <Text style={styles.emptyText}>No products found</Text>
+            <Typography style={styles.emptyText}>No products found</Typography>
           </View>
         }
       />

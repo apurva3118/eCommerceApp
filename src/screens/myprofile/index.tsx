@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   View,
-  Text,
   Image,
   TouchableOpacity,
 } from 'react-native';
@@ -13,13 +12,14 @@ import { styles } from './styles';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../utils/linking';
+import Typography from '../../components/typography';
 
 const MenuItem = ({ title, icon, onPress }: IMenuItemProps) => {
   return (
     <TouchableOpacity style={styles.menuItem} onPress={onPress}>
       <View style={styles.leftSection}>
         <SvgXml xml={icon} />
-        <Text style={styles.menuText}>{title}</Text>
+        <Typography style={styles.menuText}>{title}</Typography>
       </View>
       <SvgXml xml={forwardarrow} />
     </TouchableOpacity>
@@ -51,8 +51,8 @@ const MyProfile = () => {
             source={{ uri: 'https://i.pravatar.cc/150?img=12' }}
             style={styles.avatar}
           />
-          <Text style={styles.name}>Mark Adam</Text>
-          <Text style={styles.email}>Sunny_Koelpin45@hotmail.com</Text>
+          <Typography style={styles.name}>Mark Adam</Typography>
+          <Typography style={styles.email}>Sunny_Koelpin45@hotmail.com</Typography>
         </View>
 
         <View style={styles.menuContainer}>
@@ -65,7 +65,7 @@ const MyProfile = () => {
 
       <View style={styles.bottomSection}>
         <TouchableOpacity>
-          <Text style={styles.signOutText}>Sign Out</Text>
+          <Typography style={styles.signOutText}>Sign Out</Typography>
         </TouchableOpacity>
       </View>
 

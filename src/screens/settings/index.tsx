@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Pressable, Image, FlatList } from 'react-native';
+import { View, Pressable, Image, FlatList } from 'react-native';
 import CustomHeader from '../../components/commonheader';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { SvgXml } from 'react-native-svg';
@@ -44,12 +44,12 @@ const Settings = () => {
             <Pressable style={styles.settingItem}>
               <View style={styles.settingLeft}>
                 <Image source={item.icon} />
-                <Text style={styles.settingText}>{item.title}</Text>
+                <Typography style={styles.settingText}>{item.title}</Typography>
               </View>
 
               <View style={styles.settingRight}>
                 {item.rightText && (
-                  <Text style={styles.rightText}>{item.rightText}</Text>
+                  <Typography style={styles.rightText}>{item.rightText}</Typography>
                 )}
                 <SvgXml xml={forwardarrow} />
               </View>

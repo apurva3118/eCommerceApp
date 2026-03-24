@@ -1,8 +1,6 @@
 import { Dimensions, Platform, PixelRatio } from 'react-native';
  
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
- 
-// Based on iPhone 14 Pro scale
 const DESIGN_WIDTH = 393;
 const DESIGN_HEIGHT = 852;
  

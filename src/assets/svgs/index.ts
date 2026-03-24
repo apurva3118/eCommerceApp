@@ -14,6 +14,8 @@ import { heart } from './heart';
 import { backarrow } from './backarrow';
 import { star } from "./star";
 import { closeicon } from "./closeicon";
+import { dots } from "./dots";
+import { deleteicon } from "./deleteicon"
 export {
     home,
     myprofile,
@@ -30,5 +32,7 @@ export {
     heart,
     backarrow,
     star,
-    closeicon
+    closeicon,
+    dots,
+    deleteicon
 }

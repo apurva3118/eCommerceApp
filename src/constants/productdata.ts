@@ -9,6 +9,7 @@ export interface ProductItem {
     rating: number;
     reviews: number;
     size: (string | number)[];
+    brand?: string
 }
 
 export const ProductData: ProductItem[] = [
@@ -21,6 +22,7 @@ export const ProductData: ProductItem[] = [
         rating: 4.5,
         reviews: 120,
         size: [1],
+        brand: 'Rollex'
     },
     {
         id: '2',
@@ -31,6 +33,7 @@ export const ProductData: ProductItem[] = [
         rating: 4.8,
         reviews: 320,
         size: [6, 7, 8, 9, 10],
+        brand: 'Nike'
     },
     {
         id: '3',
@@ -41,6 +44,7 @@ export const ProductData: ProductItem[] = [
         rating: 4.8,
         reviews: 320,
         size: [1],
+        brand: 'Boat'
     },
 ];
 export const ProductDataMostPopular: ProductItem[] = [

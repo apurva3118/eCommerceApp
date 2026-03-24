@@ -6,28 +6,25 @@ export const styles = StyleSheet.create({
         height: 56,
         backgroundColor: colors.white,
         justifyContent: 'center',
-        position: 'relative', 
+        position: 'relative',
     },
-
     left: {
-        width:48,
-        height:48,
-        borderRadius:24,
-        backgroundColor:colors.cardShadow,
+        width: 48,
+        height: 48,
+        borderRadius: 24,
+        backgroundColor: colors.cardShadow,
         position: 'absolute',
         left: 16,
         top: 0,
         bottom: 0,
         justifyContent: 'center',
         zIndex: 1,
-        alignItems:'center'
+        alignItems: 'center'
     },
-
     back: {
         fontSize: 22,
         fontWeight: '600',
     },
-
     title: {
         textAlign: 'center',
         fontSize: 18,
@@ -37,11 +34,15 @@ export const styles = StyleSheet.create({
         left: 0,
         right: 0,
     },
-
     right: {
         position: 'absolute',
         right: 16,
-        width: 24,
-        height: '100%',
+        width: 48,
+        height: 48,
+        borderRadius: 24,
+        backgroundColor: colors.cardShadow,
+        justifyContent: 'center',
+        zIndex: 1,
+        alignItems: 'center'
     },
 });

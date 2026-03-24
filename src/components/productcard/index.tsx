@@ -1,12 +1,8 @@
 import React from "react";
 import {
   View,
-  Text,
   Image,
-  StyleSheet,
-  Dimensions,
   Pressable,
-  ImageSourcePropType,
 } from "react-native";
 import { SvgXml } from "react-native-svg";
 import { heart } from "../../assets/svgs";

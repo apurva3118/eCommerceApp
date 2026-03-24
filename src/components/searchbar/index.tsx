@@ -2,18 +2,14 @@ import React from 'react';
 import {
     View,
     TextInput,
-    StyleSheet,
-    Dimensions,
     Pressable,
 } from 'react-native';
 import { SvgXml } from 'react-native-svg';
-import { backarrow, closeicon, search, searchicon } from '../../assets/svgs'; // your search icon
+import { backarrow, closeicon, searchicon } from '../../assets/svgs';
 import { styles } from './style';
 import { ISearchBarProps } from './searchbar';
 import { colors } from '../../theme/colors';
 import { useNavigation } from '@react-navigation/native';
-import { AllProucts } from '../../constants/productdata';
-const { width } = Dimensions.get('window');
 
 const SearchBar = ({
     showBack = false,
