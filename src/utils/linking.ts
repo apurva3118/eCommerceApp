@@ -10,4 +10,5 @@ export type RootStackParamList = {
     price?: string;
     description?: string,
   };
+  SearchProducts: undefined
 };

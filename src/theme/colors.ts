@@ -21,5 +21,6 @@ export const colors: IColorProp = {
         borderLine: '#A9A6A6',
         greyBack: '#D3D0D0',
         orange: '#F55F1F',
-        gray: '#7D7A7A'
+        gray: '#7D7A7A',
+        blackishgray: "#999"
 }

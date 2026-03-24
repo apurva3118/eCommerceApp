@@ -5,10 +5,20 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import ProductCard from '../../components/productcard';
 import { AllProucts } from '../../constants/productdata';
 import { styles } from './styles'
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../../utils/linking';
 
 const SeeAllScreen = () => {
+  type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
+  const navigation = useNavigation<NavigationProp>();
   const handleProductPress = (product: any) => {
-    console.log('Product pressed:', product);
+    navigation.navigate('ProductDetails', {
+      title: product.title,
+      image: product.image,
+      price: product.price,
+      description: product.description,
+    })
   };
 
   const renderProductCard = ({ item }: { item: any }) => {
@@ -18,7 +28,9 @@ const SeeAllScreen = () => {
           title={item.title}
           price={item.price}
           image={item.image}
+          description={item.description}
           onPress={() => handleProductPress(item)}
+          showAddButton={true}
         />
       </View>
     );

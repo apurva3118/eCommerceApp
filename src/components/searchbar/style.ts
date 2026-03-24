@@ -5,6 +5,7 @@ const BAR_HEIGHT = width * 0.12;
 
 export const styles = StyleSheet.create({
     container: {
+        flex: 1,
         flexDirection: 'row',
         alignItems: 'center',
         height: BAR_HEIGHT,
@@ -19,4 +20,9 @@ export const styles = StyleSheet.create({
         fontSize: width * 0.04,
         color: colors.black,
     },
+    wrapper: {
+        flexDirection: "row",
+        alignItems: "center",
+    },
+
 });

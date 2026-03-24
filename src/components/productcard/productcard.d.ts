@@ -4,4 +4,5 @@ export type IProductCardProps = {
     image: ImageSourcePropType;
     description: string,
     onPress?: () => void;
+    showAddButton?: boolean;
 };

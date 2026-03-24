@@ -10,5 +10,6 @@ export const images = {
     helpcenter: require('./helpcenter.png'),
     language: require('./language.png'),
     notification: require('./notification.png'),
-    privacy: require('./privacy')
+    privacy: require('./privacy.png'),
+    plus :require('./plus.png')
 };

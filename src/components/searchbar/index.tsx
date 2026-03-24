@@ -4,27 +4,47 @@ import {
     TextInput,
     StyleSheet,
     Dimensions,
+    Pressable,
 } from 'react-native';
 import { SvgXml } from 'react-native-svg';
-import { search, searchicon } from '../../assets/svgs'; // your search icon
+import { backarrow, closeicon, search, searchicon } from '../../assets/svgs'; // your search icon
 import { styles } from './style';
+import { ISearchBarProps } from './searchbar';
+import { colors } from '../../theme/colors';
+import { useNavigation } from '@react-navigation/native';
+import { AllProucts } from '../../constants/productdata';
 const { width } = Dimensions.get('window');
 
-const SearchBar = () => {
+const SearchBar = ({
+    showBack = false,
+    showClear = false,
+    value,
+    onChangeText,
+    onClearPress,
+    editable = true,
+    onPress }: ISearchBarProps) => {
+    const navigation = useNavigation();
     return (
-        <View style={styles.container}>
+        <Pressable style={styles.wrapper} onPress={onPress} disabled={!onPress}>
+            {showBack && (<Pressable style={{ paddingLeft: 15 }} onPress={() => navigation.goBack()} >
+                <SvgXml xml={backarrow} width={20} height={20} />
+            </Pressable>)}
+            <View style={styles.container}>
 
-            {/* Icon */}
-            <SvgXml xml={searchicon} width={20} height={20} />
-
-            {/* Input */}
-            <TextInput
-                placeholder="Search here"
-                placeholderTextColor="#999"
-                style={styles.input}
-            />
-
-        </View>
+                <SvgXml xml={searchicon} width={20} height={20} />
+                <TextInput
+                    value={value}
+                    onChangeText={onChangeText}
+                    placeholder="Search here"
+                    placeholderTextColor={colors.blackishgray}
+                    style={styles.input}
+                    pointerEvents={onPress ? "none" : "auto"}
+                />
+                {showClear && (<Pressable onPress={onClearPress}>
+                    <SvgXml xml={closeicon} width={19} height={19} />
+                </Pressable>)}
+            </View>
+        </Pressable>
     );
 };
 

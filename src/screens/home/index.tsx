@@ -28,7 +28,9 @@ const Home = () => {
           onBellPress={() => console.log("Bell pressed")}
         />
 
-        <SearchBar />
+        <SearchBar
+          onPress={() => navigation.navigate('SearchProducts')}
+          editable={false} />
         <OfferCarousel />
         <View style={styles.featureRow}>
           <Typography style={styles.featureTitle}>{Strings.featured}</Typography>
@@ -93,6 +95,14 @@ const Home = () => {
                 price={item.price}
                 image={item.image}
                 description={item.description}
+                onPress={() =>
+                  navigation.navigate('ProductDetails', {
+                    title: item.title,
+                    image: item.image,
+                    price: item.price,
+                    description: item.description,
+                  })
+                }
               />
             </View>
           )}

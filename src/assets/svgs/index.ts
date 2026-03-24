@@ -13,6 +13,7 @@ import { searchicon } from "./searchicon";
 import { heart } from './heart';
 import { backarrow } from './backarrow';
 import { star } from "./star";
+import { closeicon } from "./closeicon";
 export {
     home,
     myprofile,
@@ -28,5 +29,6 @@ export {
     searchicon,
     heart,
     backarrow,
-    star
+    star,
+    closeicon
 }

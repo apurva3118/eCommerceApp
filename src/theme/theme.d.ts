@@ -21,5 +21,6 @@ export interface IColorProp {
         borderLine: string;
         greyBack: string;
         orange: string;
-        gray: string
+        gray: string;
+        blackishgray: string
 }

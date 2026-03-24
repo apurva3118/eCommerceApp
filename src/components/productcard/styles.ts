@@ -3,7 +3,6 @@ import { colors } from "../../theme/colors";
 const { width } = Dimensions.get("window");
 export const styles = StyleSheet.create({
     card: {
-        // flex: 1,
         borderRadius: 20,
         backgroundColor: colors.cardShadow,
         overflow: "hidden",
@@ -28,7 +27,6 @@ export const styles = StyleSheet.create({
         width: width * 0.08,
         height: width * 0.08,
         borderRadius: 999,
-        // backgroundColor: "rgba(0,0,0,0.5)",
         alignItems: "center",
         justifyContent: "center",
     },
@@ -48,5 +46,17 @@ export const styles = StyleSheet.create({
         fontSize: width * 0.04,
         fontWeight: "bold",
         color: colors.primaryColor,
+    },
+    addButton: {
+        position: "absolute",
+        right: 10,
+        bottom: 10,
+        borderRadius: 20,
+        padding: 8,
+    },
+
+    plusIcon: {
+        width: 24,
+        height: 24,
     },
 });
