@@ -6,6 +6,7 @@ import SeeAllScreen from "./seeall";
 import Settings from "./settings";
 import Checkout from "./checkout";
 import Orders from "./myorders";
+import Filters from "./filter";
 export {
     Home,
     MyProfile,
@@ -14,5 +15,6 @@ export {
     SeeAllScreen,
     Settings,
     Checkout,
-    Orders
+    Orders,
+    Filters
 };
