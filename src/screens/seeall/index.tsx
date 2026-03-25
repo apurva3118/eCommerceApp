@@ -13,7 +13,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../store';
 import { toggleWishlist } from '../../store/wishlistSlice';
 import { addToCart, increaseQty, decreaseQty } from '../../store/cartSlice';
-import { State } from 'react-native-gesture-handler';
 
 const SeeAllScreen = () => {
   const wishlist = useSelector((state: RootState) => state.wishlist.items);

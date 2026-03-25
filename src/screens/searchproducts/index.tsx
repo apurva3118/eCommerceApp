@@ -12,9 +12,13 @@ import Typography from '../../components/typography';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../store';
 import { toggleWishlist } from '../../store/wishlistSlice';
+import { addToCart, increaseQty, decreaseQty } from '../../store/cartSlice';
 
 const SearchProducts = () => {
   const [search, setSearch] = useState('');
+  const cartItems = useSelector((state: RootState) => state.cart.items);
+  const getCartItem = (id: string) =>
+    cartItems.find((item) => item.id === id);
   const wishlist = useSelector((state: RootState) => state.wishlist.items);
   const dispatch = useDispatch();
   type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
@@ -37,6 +41,7 @@ const SearchProducts = () => {
   };
 
   const renderProductCard = ({ item }: { item: any }) => {
+    const cartItem = getCartItem(item.id);
     return (
       <View style={styles.cardWrapper}>
         <ProductCard
@@ -47,7 +52,12 @@ const SearchProducts = () => {
           onPress={() => handleProductPress(item)}
           showAddButton={true}
           isWishlisted={wishlist.includes(item.id)}
+          isInCart={!!cartItem}
           onToggleWishlist={() => dispatch(toggleWishlist(item.id))}
+          onAddToCart={() => dispatch(addToCart(item.id))}
+          quantity={cartItem?.quantity}
+          onIncreaseQty={() => dispatch(increaseQty(item.id))}
+          onDecreaseQty={() => dispatch(decreaseQty(item.id))}
         />
       </View>
     );
