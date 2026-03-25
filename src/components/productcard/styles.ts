@@ -1,5 +1,6 @@
 import { Dimensions, StyleSheet } from "react-native";
 import { colors } from "../../theme/colors";
+import { scaleFont, wp } from "../../constants/layout";
 const { width } = Dimensions.get("window");
 export const styles = StyleSheet.create({
     card: {
@@ -59,4 +60,28 @@ export const styles = StyleSheet.create({
         width: 24,
         height: 24,
     },
+    actions: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginTop: 'auto',
+        position: "absolute",
+        right: 10,
+        bottom: 10,
+        borderRadius: 20,
+    },
+
+    qtyBtn: {
+        width: wp(32),
+        height: wp(32),
+        borderRadius: wp(16),
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
+    qty: {
+        marginHorizontal: wp(10),
+        fontSize: scaleFont(14),
+        fontWeight: '500',
+    },
+
 });

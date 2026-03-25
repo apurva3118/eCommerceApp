@@ -9,9 +9,14 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../utils/linking';
 import SearchBar from '../../components/searchbar';
 import Typography from '../../components/typography';
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState } from '../../store';
+import { toggleWishlist } from '../../store/wishlistSlice';
 
 const SearchProducts = () => {
   const [search, setSearch] = useState('');
+  const wishlist = useSelector((state: RootState) => state.wishlist.items);
+  const dispatch = useDispatch();
   type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
   const navigation = useNavigation<NavigationProp>();
 
@@ -41,6 +46,8 @@ const SearchProducts = () => {
           description={item.description}
           onPress={() => handleProductPress(item)}
           showAddButton={true}
+          isWishlisted={wishlist.includes(item.id)}
+          onToggleWishlist={() => dispatch(toggleWishlist(item.id))}
         />
       </View>
     );

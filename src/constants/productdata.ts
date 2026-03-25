@@ -51,7 +51,7 @@ export const ProductData: ProductItem[] = [
 ];
 export const ProductDataMostPopular: ProductItem[] = [
     {
-        id: '1',
+        id: '4',
         image: require('../assets/images/lgtv.png'),
         title: 'LG TV',
         price: '$ 4000',
@@ -61,7 +61,7 @@ export const ProductDataMostPopular: ProductItem[] = [
         size: [1],
     },
     {
-        id: '2',
+        id: '5',
         image: require('../assets/images/jacket.png'),
         title: 'Jacket',
         price: '$ 430',
@@ -71,7 +71,7 @@ export const ProductDataMostPopular: ProductItem[] = [
         size: [6, 7, 8, 9, 10],
     },
     {
-        id: '3',
+        id: '6',
         image: require('../assets/images/hoodie.png'),
         title: 'Hoodie',
         price: '$ 430',
@@ -83,7 +83,7 @@ export const ProductDataMostPopular: ProductItem[] = [
 ];
 export const AllProucts: ProductItem[] = [
     {
-        id: '1',
+        id: '4',
         image: require('../assets/images/lgtv.png'),
         title: 'LG TV',
         price: '$ 4000',
@@ -95,7 +95,7 @@ export const AllProucts: ProductItem[] = [
         brand: 'LG'
     },
     {
-        id: '2',
+        id: '5',
         image: require('../assets/images/jacket.png'),
         title: 'Jacket',
         price: '$ 430',
@@ -107,7 +107,7 @@ export const AllProucts: ProductItem[] = [
         brand: 'H&M'
     },
     {
-        id: '3',
+        id: '6',
         image: require('../assets/images/hoodie.png'),
         title: 'Hoodie',
         price: '$ 430',
@@ -119,7 +119,7 @@ export const AllProucts: ProductItem[] = [
         brand: 'Gap'
     },
     {
-        id: '4',
+        id: '1',
         image: require('../assets/images/watch.png'),
         title: 'Watch',
         price: '$ 40',
@@ -131,7 +131,7 @@ export const AllProucts: ProductItem[] = [
         brand: 'Rolex'
     },
     {
-        id: '5',
+        id: '2',
         image: require('../assets/images/shoes.png'),
         title: 'Nike Shoes',
         price: '$ 430',
@@ -143,7 +143,7 @@ export const AllProucts: ProductItem[] = [
         brand: 'Nike'
     },
     {
-        id: '6',
+        id: '3',
         image: require('../assets/images/airpod.png'),
         title: 'Boat Airpods',
         price: '$ 430',

@@ -17,4 +17,22 @@ export const styles = StyleSheet.create({
     btnStyle: {
         width: wp(350)
     },
+    emptyContainer: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 80,
+    },
+
+    emptyImage: {
+        width: 200,
+        height: 200,
+        resizeMode: 'contain',
+        marginBottom: 20,
+    },
+
+    emptyText: {
+        fontSize: 16,
+        marginBottom: 20,
+    },
 });

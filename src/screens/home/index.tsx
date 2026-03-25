@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FlatList, Pressable, ScrollView, View } from 'react-native';
 import Header from '../../components/header';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -12,8 +12,13 @@ import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../utils/linking';
 import { Strings } from '../../constants/strings';
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleWishlist } from '../../store/wishlistSlice';
+import { RootState } from '../../store';
 
 const Home = () => {
+  const wishlist = useSelector((state: RootState) => state.wishlist.items);
+  const dispatch = useDispatch();
   type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
   const navigation = useNavigation<NavigationProp>();
   return (
@@ -58,6 +63,8 @@ const Home = () => {
                 price={item.price}
                 image={item.image}
                 description={item.description}
+                isWishlisted={wishlist.includes(item.id)}
+                onToggleWishlist={() => dispatch(toggleWishlist(item.id))}
                 onPress={() =>
                   navigation.navigate('ProductDetails', {
                     title: item.title,
@@ -95,6 +102,8 @@ const Home = () => {
                 price={item.price}
                 image={item.image}
                 description={item.description}
+                isWishlisted={wishlist.includes(item.id)}
+                onToggleWishlist={() => dispatch(toggleWishlist(item.id))}
                 onPress={() =>
                   navigation.navigate('ProductDetails', {
                     title: item.title,

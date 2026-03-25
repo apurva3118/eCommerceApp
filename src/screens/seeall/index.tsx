@@ -9,8 +9,18 @@ import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../utils/linking';
 import Typography from '../../components/typography';
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState } from '../../store';
+import { toggleWishlist } from '../../store/wishlistSlice';
+import { addToCart, increaseQty, decreaseQty } from '../../store/cartSlice';
+import { State } from 'react-native-gesture-handler';
 
 const SeeAllScreen = () => {
+  const wishlist = useSelector((state: RootState) => state.wishlist.items);
+  const cartItems = useSelector((State: RootState) => State.cart.items);
+  const getCartItem = (id: string) =>
+    cartItems.find((item) => item.id === id);
+  const dispatch = useDispatch();
   type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
   const navigation = useNavigation<NavigationProp>();
   const handleProductPress = (product: any) => {
@@ -23,6 +33,7 @@ const SeeAllScreen = () => {
   };
 
   const renderProductCard = ({ item }: { item: any }) => {
+    const cartItem = getCartItem(item.id);
     return (
       <View style={styles.cardWrapper}>
         <ProductCard
@@ -32,6 +43,13 @@ const SeeAllScreen = () => {
           description={item.description}
           onPress={() => handleProductPress(item)}
           showAddButton={true}
+          isInCart={!!cartItem}
+          isWishlisted={wishlist.includes(item.id)}
+          onToggleWishlist={() => dispatch(toggleWishlist(item.id))}
+          onAddToCart={() => dispatch(addToCart(item.id))}
+          quantity={cartItem?.quantity}
+          onIncreaseQty={() => dispatch(increaseQty(item.id))}
+          onDecreaseQty={() => dispatch(decreaseQty(item.id))}
         />
       </View>
     );

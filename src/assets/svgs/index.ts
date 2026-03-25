@@ -21,6 +21,7 @@ import { cash } from "./cash";
 import { card } from "./card";
 import { tickmark } from "./tickmark";
 import { plussmall } from "./plussmall";
+import { whiteheart } from "./whiteheart";
 export {
     home,
     myprofile,
@@ -44,5 +45,6 @@ export {
     cash,
     card,
     tickmark,
-    plussmall
+    plussmall,
+    whiteheart
 }

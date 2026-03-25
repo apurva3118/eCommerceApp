@@ -8,10 +8,10 @@ import Typography from '../typography';
 import ButtonPrimary from '../buttonprimary';
 import { Strings } from '../../constants/strings';
 
-const CartItem = ({ item, showtrack = false }: ICartItemProps) => {
+const CartItem = ({ item, showtrack = false, onDecreaseQty, onIncreaseQty, onRemove, quantity }: ICartItemProps) => {
     return (
         <View style={styles.container}>
-            {!showtrack && (<TouchableOpacity style={styles.deleteBtn}>
+            {!showtrack && (<TouchableOpacity style={styles.deleteBtn} onPress={onRemove}>
                 <SvgXml xml={deleteicon} />
             </TouchableOpacity>)}
             <View style={styles.leftSection}>
@@ -34,13 +34,13 @@ const CartItem = ({ item, showtrack = false }: ICartItemProps) => {
 
                 </View>
                 : <View style={styles.actions}>
-                    <TouchableOpacity style={styles.qtyBtn}>
+                    <TouchableOpacity style={styles.qtyBtn} onPress={onDecreaseQty}>
                         <Image source={require('../../assets/images/minus.png')} style={styles.plusIcon} />
                     </TouchableOpacity>
 
-                    <Typography style={styles.qty}>03</Typography>
+                    <Typography style={styles.qty}>{quantity}</Typography>
 
-                    <TouchableOpacity style={styles.qtyBtn}>
+                    <TouchableOpacity style={styles.qtyBtn} onPress={onIncreaseQty}>
                         <Image source={require('../../assets/images/plus.png')} style={styles.plusIcon} />
                     </TouchableOpacity>
                 </View>}
