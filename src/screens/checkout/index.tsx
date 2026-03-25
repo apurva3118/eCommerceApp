@@ -3,8 +3,6 @@ import { View, Text, Image, ScrollView } from 'react-native';
 import CustomHeader from '../../components/commonheader';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { styles } from './styles';
-import { SvgXml } from 'react-native-svg';
-import { profile, products } from '../../assets/svgs'; // make sure you have these
 import Typography from '../../components/typography';
 import OrderSummary from '../../components/ordersummary';
 import { ProductData } from '../../constants/productdata';
