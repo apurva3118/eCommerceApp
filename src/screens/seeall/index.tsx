@@ -24,6 +24,7 @@ const SeeAllScreen = () => {
   const navigation = useNavigation<NavigationProp>();
   const handleProductPress = (product: any) => {
     navigation.navigate('ProductDetails', {
+      id: product.id,
       title: product.title,
       image: product.image,
       price: product.price,

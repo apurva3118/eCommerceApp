@@ -4,19 +4,20 @@ import {
     Image,
     Pressable,
     ScrollView,
-    Dimensions,
     TouchableOpacity,
 } from 'react-native';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { RouteProp, useNavigation, useRoute } from '@react-navigation/native';
 import { RootStackParamList } from '../../utils/linking';
 import { SvgXml } from 'react-native-svg';
-import { heart, backarrow, star, products } from '../../assets/svgs';
+import { heart, backarrow, star, products, whiteheart } from '../../assets/svgs';
 import Typography from '../../components/typography';
 import { colors } from '../../theme/colors';
 import { styles } from './styles';
 import ButtonPrimary from '../../components/buttonprimary';
 import { Strings } from '../../constants/strings';
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleWishlist } from '../../store/wishlistSlice';
 
 type ProductRouteProp = RouteProp<RootStackParamList, 'ProductDetails'>;
 
@@ -25,8 +26,11 @@ const ProductDetails = () => {
     const route = useRoute<ProductRouteProp>();
     const insets = useSafeAreaInsets();
 
-    const { title, image, price, description } = route.params;
+    const { title, image, price, description, id } = route.params;
+    const dispatch = useDispatch();
+    const wishlistItems = useSelector((state: any) => state.wishlist.items);
 
+    const isInWishlist = wishlistItems.includes(id);
     return (
         <View style={{ flex: 1, backgroundColor: colors.white }}>
             <ScrollView showsVerticalScrollIndicator={false}>
@@ -41,8 +45,8 @@ const ProductDetails = () => {
                         <SvgXml xml={backarrow} />
                     </Pressable>
 
-                    <Pressable style={[styles.heartBtn, { top: insets.top + 10 }]}>
-                        <SvgXml xml={heart} />
+                    <Pressable style={[styles.heartBtn, { top: insets.top + 10 }]} onPress={() => dispatch(toggleWishlist(id))}>
+                        <SvgXml xml={isInWishlist ? whiteheart : heart} />
                     </Pressable>
                 </View>
                 <SafeAreaView edges={['bottom']}>

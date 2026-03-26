@@ -4,7 +4,6 @@ import HomeScreen from '../screens/home';
 import SearchScreen from '../screens/searchproducts';
 import ProfileScreen from '../screens/myprofile';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Text } from 'react-native';
 import { SvgXml } from 'react-native-svg';
 import {
     home,
@@ -13,28 +12,32 @@ import {
     search,
 } from '../assets/svgs';
 import MyCart from '../screens/mycart';
+import { colors } from '../theme/colors';
 
 const Tab = createBottomTabNavigator();
 
-const Icon = ({ label }: { label: string }) => <Text>{label}</Text>;
-
 export default function BottomTabs() {
     const insets = useSafeAreaInsets();
-    const renderIcon = (xml: string, color: string) => (
-        <SvgXml xml={xml.replace(/currentColor/g, color)} width={24} height={24} />
-    );
+    const renderIcon = (xml: string, color: string) => {
+        let updatedXml = xml
+            .replace(/fill="[^"]*"/g, `fill="${color}"`)
+            .replace(/stroke="[^"]*"/g, `stroke="${color}"`);
+
+        return <SvgXml xml={updatedXml} width={24} height={24} />;
+    };
     return (
         <Tab.Navigator
             screenOptions={{
                 headerShown: false,
-                tabBarActiveTintColor: '#007AFF',   // 🔵 selected (blue)
-                tabBarInactiveTintColor: 'gray',
+                tabBarShowLabel: false,
+                tabBarActiveTintColor: colors.primaryColor,
+                tabBarInactiveTintColor: colors.greyBagColor,
                 tabBarStyle: {
                     height: 60 + insets.bottom,
                     paddingBottom: insets.bottom,
                     borderTopLeftRadius: 20,
                     borderTopRightRadius: 20,
-                    backgroundColor: '#fff',
+                    backgroundColor: colors.white
                 },
                 tabBarItemStyle: {
                     flex: 1,
@@ -42,7 +45,7 @@ export default function BottomTabs() {
                     alignItems: 'center',
                 },
                 tabBarIconStyle: {
-                    marginTop: 0,   // 🔥 remove default offset
+                    marginTop: 6,
                 },
             }}
         >

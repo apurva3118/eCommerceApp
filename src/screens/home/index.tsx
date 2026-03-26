@@ -67,6 +67,7 @@ const Home = () => {
                 onToggleWishlist={() => dispatch(toggleWishlist(item.id))}
                 onPress={() =>
                   navigation.navigate('ProductDetails', {
+                    id: item.id,
                     title: item.title,
                     image: item.image,
                     price: item.price,
@@ -106,6 +107,7 @@ const Home = () => {
                 onToggleWishlist={() => dispatch(toggleWishlist(item.id))}
                 onPress={() =>
                   navigation.navigate('ProductDetails', {
+                    id: item.id,
                     title: item.title,
                     image: item.image,
                     price: item.price,

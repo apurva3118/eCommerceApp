@@ -5,6 +5,7 @@ export type RootStackParamList = {
   SeeAll: { type: string };
   Settings: undefined;
   ProductDetails: {
+    id: string;
     title: string;
     image: ImageSourcePropType;
     price?: string;
