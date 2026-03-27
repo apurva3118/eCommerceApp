@@ -34,7 +34,7 @@
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>RCTNewArchEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -55,6 +55,46 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
+	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>CTCSplashRoundedBold.otf</string>
+		<string>Blogger_Sans-Light.otf</string>
+		<string>Blogger_Sans-Bold.otf</string>
+		<string>Blogger_Sans-Medium.otf</string>
+		<string>CTCSplashRoundedRegularItalic.otf</string>
+		<string>Blogger_Sans.otf</string>
+		<string>Blogger_Sans-Light_Italic.otf</string>
+		<string>Blogger_Sans-Medium_Italic.otf</string>
+		<string>CTCSplashRoundedRegular.otf</string>
+		<string>Blogger_Sans-Italic.otf</string>
+		<string>CTCSplashRoundedBoldItalic.otf</string>
+		<string>Blogger_Sans-Bold_Italic.otf</string>
+		<string>Rubik-MediumItalic.ttf</string>
+		<string>BSBloggerSans.ttf</string>
+		<string>Rubik-Bold.ttf</string>
+		<string>calibriregularitalic.ttf</string>
+		<string>calibrilight.ttf</string>
+		<string>calibribold.ttf</string>
+		<string>calibriregular.ttf</string>
+		<string>Rubik-SemiBoldItalic.ttf</string>
+		<string>calibrilightitalic.ttf</string>
+		<string>Rubik-Light.ttf</string>
+		<string>Rubik-Medium.ttf</string>
+		<string>Rubik-ExtraBoldItalic.ttf</string>
+		<string>Rubik-Black.ttf</string>
+		<string>Rubik-Italic.ttf</string>
+		<string>Rubik-LightItalic.ttf</string>
+		<string>calibribolditalic.ttf</string>
+		<string>Rubik-SemiBold.ttf</string>
+		<string>Rubik-BlackItalic.ttf</string>
+		<string>megafonts_inc.ttf</string>
+		<string>calibri_bold.ttf</string>
+		<string>Rubik-ExtraBold.ttf</string>
+		<string>Rubik-Regular.ttf</string>
+		<string>BSBloggerSans_1.ttf</string>
+		<string>calibri.ttf</string>
+		<string>Rubik-BoldItalic.ttf</string>
+	</array>
 </dict>
 </plist>

@@ -1,0 +1,153 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "android/app/src/main/assets/fonts/Blogger_Sans-Bold_Italic.otf",
+      "sha1": "29c067655d1b8950d01c6b4865ba82bfe9cfd3ee"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Blogger_Sans-Bold.otf",
+      "sha1": "68904d6b7f7e75d2a0924dd0936ad2722fd9828e"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Blogger_Sans-Italic.otf",
+      "sha1": "5b10493fb2db70038b9f774c4e6f4ce9b6da10b6"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Blogger_Sans-Light_Italic.otf",
+      "sha1": "1e25c6fe23525a802da51cdf4ba16937ae100ce3"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Blogger_Sans-Light.otf",
+      "sha1": "ee27e856c551c9823ed2691c64dd096401a9c273"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Blogger_Sans-Medium_Italic.otf",
+      "sha1": "981ec9f12c591e855eb00a957b9a65c967d826df"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Blogger_Sans-Medium.otf",
+      "sha1": "35270425573675d1054f059c2d05956c98eb6b68"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Blogger_Sans.otf",
+      "sha1": "7c38214324325d677d77816449822523a3a5c335"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/BSBloggerSans_1.ttf",
+      "sha1": "6cda505910467380ec28e1c9c138a1250ea1b0cd"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/BSBloggerSans.ttf",
+      "sha1": "6cda505910467380ec28e1c9c138a1250ea1b0cd"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/calibri_bold.ttf",
+      "sha1": "522c8443fecbfd564a8e0a8d1c03dcb41aab48b4"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/calibri.ttf",
+      "sha1": "f5389d4420139276a898ccc7e04ac9ae7f76b431"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/calibribold.ttf",
+      "sha1": "809d30d825fb35818169d9a7ae97cb3c23906e85"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/calibribolditalic.ttf",
+      "sha1": "07b35291a5f1fb10c06d62b9a32ee859d9689188"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/calibrilight.ttf",
+      "sha1": "a3fa46777b5cf39962abf05ecc23c4834591b5ae"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/calibrilightitalic.ttf",
+      "sha1": "7ed1f21987eba82fc132f81129ffb8fa5882699f"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/calibriregular.ttf",
+      "sha1": "ca2f8a53ffe2aae20e016a34943669fc7408be6e"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/calibriregularitalic.ttf",
+      "sha1": "c5ee79cda37fef09ad1221d905a8e5b2a9f8f00d"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/CTCSplashRoundedBold.otf",
+      "sha1": "b0640c25a9f84862b749f5ee6ce3ef73aef98b7c"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/CTCSplashRoundedBoldItalic.otf",
+      "sha1": "81fe55285fc267dc35f95c059de146546d920816"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/CTCSplashRoundedRegular.otf",
+      "sha1": "32fa22205ada9c7fc8390e3c6d0083e972a69ca9"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/CTCSplashRoundedRegularItalic.otf",
+      "sha1": "cd48e5305c0e908f881d3ebee207b5b0b820a28f"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/megafonts_inc.ttf",
+      "sha1": "e250241f13c4c0ba7c5f7129f8f1b83b085baad2"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Rubik-Black.ttf",
+      "sha1": "c44ef6d3d99d3a0f7545a2a387c5a539ac54927e"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Rubik-BlackItalic.ttf",
+      "sha1": "87ee3027dc92881bb894dee9055a8e981253ce7c"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Rubik-Bold.ttf",
+      "sha1": "4aad5243cee047469b80f96a92714f2e88418785"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Rubik-BoldItalic.ttf",
+      "sha1": "be1a697996c4e7996d7118d199d7169c327b1b24"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Rubik-ExtraBold.ttf",
+      "sha1": "98cc0f956b0ef647c14d9103cfb8af317c4a9b18"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Rubik-ExtraBoldItalic.ttf",
+      "sha1": "005a89df0e2b6000f34e55e70bde72ed72d1aa13"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Rubik-Italic.ttf",
+      "sha1": "f158826724189b30d0c24eb83c4c0ad027359d0f"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Rubik-Light.ttf",
+      "sha1": "4e89f40b6b4938fd7e705960c74a0139ec12cae5"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Rubik-LightItalic.ttf",
+      "sha1": "f7787cc6a10cf6174dac9d2088d30fd5c712c5ae"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Rubik-Medium.ttf",
+      "sha1": "786b4465e48a9b0496800f1d607fd6d8fef8eb8c"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Rubik-MediumItalic.ttf",
+      "sha1": "3ea88f8c95e07530295133fe78295d550cdccea7"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Rubik-Regular.ttf",
+      "sha1": "01247a7ea5dcb29e28d5fb9f6feb3eb72a1bc3b2"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Rubik-SemiBold.ttf",
+      "sha1": "3ba0f03e9880cad05eb919df2e2d0884ca9c9999"
+    },
+    {
+      "path": "android/app/src/main/assets/fonts/Rubik-SemiBoldItalic.ttf",
+      "sha1": "ee3f3f0c7ae6cc077048b444a1131e37c508b32c"
+    }
+  ]
+}

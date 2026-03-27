@@ -7,24 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07E76ED35B274F139CD8E007 /* Blogger_Sans.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C26C744C65C48908449E4D0 /* Blogger_Sans.otf */; };
+		0834FF924AE346C7AA25B1F8 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3277618D36C04B209A5F5239 /* Rubik-MediumItalic.ttf */; };
+		0C286CDBB94946A88B3D2700 /* calibrilight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE805218BB242ADA58F7354 /* calibrilight.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-eCommerceApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-eCommerceApp.a */; };
+		0FCFC7B074EA459CB868C679 /* Blogger_Sans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0127E25A4ABE4186AEBCB9D4 /* Blogger_Sans-Light.otf */; };
+		10CE19B8C7E64AF38D075CAF /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7437B28355264B209AEED5A1 /* Rubik-SemiBold.ttf */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		17EDB9A1DD30416CB6B9998E /* Blogger_Sans-Medium_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7C7A6182B14F4228B327AAB4 /* Blogger_Sans-Medium_Italic.otf */; };
+		1CB95B4C4E90455DB93BFC90 /* Blogger_Sans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC1645524DE34636AB074DAA /* Blogger_Sans-Bold.otf */; };
+		27EC411B48DB44459C5919FB /* calibri_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2183D5955CF249688E431028 /* calibri_bold.ttf */; };
+		3B9D008B047D400BBFE30756 /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F90F79F58FD34928993F09C3 /* Rubik-BoldItalic.ttf */; };
+		3E31771E56B240A7B9EE2A1F /* Rubik-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 213AD5D98790463EA7841B8C /* Rubik-ExtraBoldItalic.ttf */; };
+		3FB573FCFE6A421883BA7458 /* Rubik-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5EB8B32F9804F7F9C6FF3BF /* Rubik-SemiBoldItalic.ttf */; };
+		40B55306379F4F0496843FEF /* CTCSplashRoundedRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1B0EB5FBBFAB4A3990A96057 /* CTCSplashRoundedRegular.otf */; };
+		4470F3D3646E47E3AB9BEA26 /* CTCSplashRoundedRegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 720F30656F31406B86F23E4F /* CTCSplashRoundedRegularItalic.otf */; };
+		6560F239C9E44C54B24C08D0 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7C034C72C3F47639FDA6A23 /* Rubik-Medium.ttf */; };
+		67C1FB33C2AA4D6384B0C81C /* CTCSplashRoundedBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E14603AC1E444C286D9534F /* CTCSplashRoundedBold.otf */; };
+		6EFA45C6307E47E683C66240 /* calibriregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70B7B8AC15DB44EC9E02231A /* calibriregular.ttf */; };
 		7156EBF7DB4C75CB6A0A380F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		7F506607138C4C448F7A8C35 /* calibrilightitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3881BDC0A344CA19ED0CEE6 /* calibrilightitalic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		834C2F7218E54CC28F0E5AB2 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36C227D98009469AB62D5FC0 /* Rubik-Regular.ttf */; };
+		9521396CD7384DA78D6FD41E /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 576181A3BFC14ACDA6FBDEED /* Rubik-Bold.ttf */; };
+		97BBE73E6B7D483597ED8038 /* BSBloggerSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 659500971CB04DAAAA2FDC77 /* BSBloggerSans.ttf */; };
+		9835B85BD41F4C2C85A9485B /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C120852D73684B3F8D32B754 /* Rubik-Light.ttf */; };
+		98EE3E1E06E74082870F61B8 /* megafonts_inc.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 971D722C22BF4838BD7F86FF /* megafonts_inc.ttf */; };
+		9A3C0288F4264A42A4D4ADDB /* Blogger_Sans-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4498809021434741A1243C9C /* Blogger_Sans-Italic.otf */; };
+		A11453B513844CD19ABC6CEC /* calibribold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2AACEA2A8CD846CEB38A54C2 /* calibribold.ttf */; };
+		A13751EAA9B94737B3ED0858 /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 795C8EFE69E04D4FA30FC0E0 /* Rubik-Italic.ttf */; };
+		A5C5912720F84B3F997B735C /* calibri.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8EF4C48507F406497028307 /* calibri.ttf */; };
+		AB406FF75CC24F07B9CBF5A3 /* calibriregularitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 176737FE7FED4736876D3533 /* calibriregularitalic.ttf */; };
+		B0D07CEB53044D1B81A33D78 /* Blogger_Sans-Bold_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0875F0582792433A8ECD9ED5 /* Blogger_Sans-Bold_Italic.otf */; };
+		CB973A0E6EC34687A1F1E663 /* calibribolditalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C63CF967E7BF444F9710EF13 /* calibribolditalic.ttf */; };
+		D665C543B630419CBEA925D0 /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29FAE07E0C2644868D56FAC9 /* Rubik-ExtraBold.ttf */; };
+		E57CA1B26B074BAFA332650B /* Blogger_Sans-Light_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8D707E806F5344A989C2BDC2 /* Blogger_Sans-Light_Italic.otf */; };
+		E778DE5122C648A2BA917EEF /* BSBloggerSans_1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27FCF51FEDAA46E196F18E6C /* BSBloggerSans_1.ttf */; };
+		E9D47936E39C4BAF997D57EF /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BC438B4C8D342B98DF4DD96 /* Rubik-BlackItalic.ttf */; };
+		EBE5D013386B4CEF97669F23 /* Blogger_Sans-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 177ABB80F5734B76B0709412 /* Blogger_Sans-Medium.otf */; };
+		EC5A9EC55B4945DA94258EEE /* CTCSplashRoundedBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FE9FE81C3A94E6A93686795 /* CTCSplashRoundedBoldItalic.otf */; };
+		F33222EBB8B24EDAB6535987 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8C9CB00B94149439FEBF368 /* Rubik-Black.ttf */; };
+		F5EE295684C44006ABA071F8 /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE3F8B79504741659A857C39 /* Rubik-LightItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0127E25A4ABE4186AEBCB9D4 /* Blogger_Sans-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger_Sans-Light.otf"; path = "../android/app/src/main/assets/fonts/Blogger_Sans-Light.otf"; sourceTree = "<group>"; };
+		0875F0582792433A8ECD9ED5 /* Blogger_Sans-Bold_Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger_Sans-Bold_Italic.otf"; path = "../android/app/src/main/assets/fonts/Blogger_Sans-Bold_Italic.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* eCommerceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eCommerceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = eCommerceApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = eCommerceApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = eCommerceApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		176737FE7FED4736876D3533 /* calibriregularitalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = calibriregularitalic.ttf; path = ../android/app/src/main/assets/fonts/calibriregularitalic.ttf; sourceTree = "<group>"; };
+		177ABB80F5734B76B0709412 /* Blogger_Sans-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger_Sans-Medium.otf"; path = "../android/app/src/main/assets/fonts/Blogger_Sans-Medium.otf"; sourceTree = "<group>"; };
+		1B0EB5FBBFAB4A3990A96057 /* CTCSplashRoundedRegular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = CTCSplashRoundedRegular.otf; path = ../android/app/src/main/assets/fonts/CTCSplashRoundedRegular.otf; sourceTree = "<group>"; };
+		1BC438B4C8D342B98DF4DD96 /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-BlackItalic.ttf"; path = "../android/app/src/main/assets/fonts/Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
+		213AD5D98790463EA7841B8C /* Rubik-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-ExtraBoldItalic.ttf"; path = "../android/app/src/main/assets/fonts/Rubik-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		2183D5955CF249688E431028 /* calibri_bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = calibri_bold.ttf; path = ../android/app/src/main/assets/fonts/calibri_bold.ttf; sourceTree = "<group>"; };
+		27FCF51FEDAA46E196F18E6C /* BSBloggerSans_1.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = BSBloggerSans_1.ttf; path = ../android/app/src/main/assets/fonts/BSBloggerSans_1.ttf; sourceTree = "<group>"; };
+		29FAE07E0C2644868D56FAC9 /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-ExtraBold.ttf"; path = "../android/app/src/main/assets/fonts/Rubik-ExtraBold.ttf"; sourceTree = "<group>"; };
+		2AACEA2A8CD846CEB38A54C2 /* calibribold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = calibribold.ttf; path = ../android/app/src/main/assets/fonts/calibribold.ttf; sourceTree = "<group>"; };
+		2E14603AC1E444C286D9534F /* CTCSplashRoundedBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = CTCSplashRoundedBold.otf; path = ../android/app/src/main/assets/fonts/CTCSplashRoundedBold.otf; sourceTree = "<group>"; };
+		3277618D36C04B209A5F5239 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-MediumItalic.ttf"; path = "../android/app/src/main/assets/fonts/Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
+		36C227D98009469AB62D5FC0 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Regular.ttf"; path = "../android/app/src/main/assets/fonts/Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-eCommerceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eCommerceApp.debug.xcconfig"; path = "Target Support Files/Pods-eCommerceApp/Pods-eCommerceApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4498809021434741A1243C9C /* Blogger_Sans-Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger_Sans-Italic.otf"; path = "../android/app/src/main/assets/fonts/Blogger_Sans-Italic.otf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-eCommerceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eCommerceApp.release.xcconfig"; path = "Target Support Files/Pods-eCommerceApp/Pods-eCommerceApp.release.xcconfig"; sourceTree = "<group>"; };
+		576181A3BFC14ACDA6FBDEED /* Rubik-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Bold.ttf"; path = "../android/app/src/main/assets/fonts/Rubik-Bold.ttf"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-eCommerceApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eCommerceApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		659500971CB04DAAAA2FDC77 /* BSBloggerSans.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = BSBloggerSans.ttf; path = ../android/app/src/main/assets/fonts/BSBloggerSans.ttf; sourceTree = "<group>"; };
+		6FE9FE81C3A94E6A93686795 /* CTCSplashRoundedBoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = CTCSplashRoundedBoldItalic.otf; path = ../android/app/src/main/assets/fonts/CTCSplashRoundedBoldItalic.otf; sourceTree = "<group>"; };
+		70B7B8AC15DB44EC9E02231A /* calibriregular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = calibriregular.ttf; path = ../android/app/src/main/assets/fonts/calibriregular.ttf; sourceTree = "<group>"; };
+		720F30656F31406B86F23E4F /* CTCSplashRoundedRegularItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = CTCSplashRoundedRegularItalic.otf; path = ../android/app/src/main/assets/fonts/CTCSplashRoundedRegularItalic.otf; sourceTree = "<group>"; };
+		7437B28355264B209AEED5A1 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-SemiBold.ttf"; path = "../android/app/src/main/assets/fonts/Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = eCommerceApp/AppDelegate.swift; sourceTree = "<group>"; };
+		795C8EFE69E04D4FA30FC0E0 /* Rubik-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Italic.ttf"; path = "../android/app/src/main/assets/fonts/Rubik-Italic.ttf"; sourceTree = "<group>"; };
+		7C7A6182B14F4228B327AAB4 /* Blogger_Sans-Medium_Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger_Sans-Medium_Italic.otf"; path = "../android/app/src/main/assets/fonts/Blogger_Sans-Medium_Italic.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = eCommerceApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C26C744C65C48908449E4D0 /* Blogger_Sans.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Blogger_Sans.otf; path = ../android/app/src/main/assets/fonts/Blogger_Sans.otf; sourceTree = "<group>"; };
+		8D707E806F5344A989C2BDC2 /* Blogger_Sans-Light_Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger_Sans-Light_Italic.otf"; path = "../android/app/src/main/assets/fonts/Blogger_Sans-Light_Italic.otf"; sourceTree = "<group>"; };
+		971D722C22BF4838BD7F86FF /* megafonts_inc.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = megafonts_inc.ttf; path = ../android/app/src/main/assets/fonts/megafonts_inc.ttf; sourceTree = "<group>"; };
+		9FE805218BB242ADA58F7354 /* calibrilight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = calibrilight.ttf; path = ../android/app/src/main/assets/fonts/calibrilight.ttf; sourceTree = "<group>"; };
+		A5EB8B32F9804F7F9C6FF3BF /* Rubik-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-SemiBoldItalic.ttf"; path = "../android/app/src/main/assets/fonts/Rubik-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		BC1645524DE34636AB074DAA /* Blogger_Sans-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger_Sans-Bold.otf"; path = "../android/app/src/main/assets/fonts/Blogger_Sans-Bold.otf"; sourceTree = "<group>"; };
+		C120852D73684B3F8D32B754 /* Rubik-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Light.ttf"; path = "../android/app/src/main/assets/fonts/Rubik-Light.ttf"; sourceTree = "<group>"; };
+		C63CF967E7BF444F9710EF13 /* calibribolditalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = calibribolditalic.ttf; path = ../android/app/src/main/assets/fonts/calibribolditalic.ttf; sourceTree = "<group>"; };
+		C7C034C72C3F47639FDA6A23 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.ttf"; path = "../android/app/src/main/assets/fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		D8EF4C48507F406497028307 /* calibri.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = calibri.ttf; path = ../android/app/src/main/assets/fonts/calibri.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F3881BDC0A344CA19ED0CEE6 /* calibrilightitalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = calibrilightitalic.ttf; path = ../android/app/src/main/assets/fonts/calibrilightitalic.ttf; sourceTree = "<group>"; };
+		F8C9CB00B94149439FEBF368 /* Rubik-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Black.ttf"; path = "../android/app/src/main/assets/fonts/Rubik-Black.ttf"; sourceTree = "<group>"; };
+		F90F79F58FD34928993F09C3 /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-BoldItalic.ttf"; path = "../android/app/src/main/assets/fonts/Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
+		FE3F8B79504741659A857C39 /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-LightItalic.ttf"; path = "../android/app/src/main/assets/fonts/Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +113,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10B2485DC068434E89F1C905 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E14603AC1E444C286D9534F /* CTCSplashRoundedBold.otf */,
+				0127E25A4ABE4186AEBCB9D4 /* Blogger_Sans-Light.otf */,
+				BC1645524DE34636AB074DAA /* Blogger_Sans-Bold.otf */,
+				177ABB80F5734B76B0709412 /* Blogger_Sans-Medium.otf */,
+				720F30656F31406B86F23E4F /* CTCSplashRoundedRegularItalic.otf */,
+				8C26C744C65C48908449E4D0 /* Blogger_Sans.otf */,
+				8D707E806F5344A989C2BDC2 /* Blogger_Sans-Light_Italic.otf */,
+				7C7A6182B14F4228B327AAB4 /* Blogger_Sans-Medium_Italic.otf */,
+				1B0EB5FBBFAB4A3990A96057 /* CTCSplashRoundedRegular.otf */,
+				4498809021434741A1243C9C /* Blogger_Sans-Italic.otf */,
+				6FE9FE81C3A94E6A93686795 /* CTCSplashRoundedBoldItalic.otf */,
+				0875F0582792433A8ECD9ED5 /* Blogger_Sans-Bold_Italic.otf */,
+				3277618D36C04B209A5F5239 /* Rubik-MediumItalic.ttf */,
+				659500971CB04DAAAA2FDC77 /* BSBloggerSans.ttf */,
+				576181A3BFC14ACDA6FBDEED /* Rubik-Bold.ttf */,
+				176737FE7FED4736876D3533 /* calibriregularitalic.ttf */,
+				9FE805218BB242ADA58F7354 /* calibrilight.ttf */,
+				2AACEA2A8CD846CEB38A54C2 /* calibribold.ttf */,
+				70B7B8AC15DB44EC9E02231A /* calibriregular.ttf */,
+				A5EB8B32F9804F7F9C6FF3BF /* Rubik-SemiBoldItalic.ttf */,
+				F3881BDC0A344CA19ED0CEE6 /* calibrilightitalic.ttf */,
+				C120852D73684B3F8D32B754 /* Rubik-Light.ttf */,
+				C7C034C72C3F47639FDA6A23 /* Rubik-Medium.ttf */,
+				213AD5D98790463EA7841B8C /* Rubik-ExtraBoldItalic.ttf */,
+				F8C9CB00B94149439FEBF368 /* Rubik-Black.ttf */,
+				795C8EFE69E04D4FA30FC0E0 /* Rubik-Italic.ttf */,
+				FE3F8B79504741659A857C39 /* Rubik-LightItalic.ttf */,
+				C63CF967E7BF444F9710EF13 /* calibribolditalic.ttf */,
+				7437B28355264B209AEED5A1 /* Rubik-SemiBold.ttf */,
+				1BC438B4C8D342B98DF4DD96 /* Rubik-BlackItalic.ttf */,
+				971D722C22BF4838BD7F86FF /* megafonts_inc.ttf */,
+				2183D5955CF249688E431028 /* calibri_bold.ttf */,
+				29FAE07E0C2644868D56FAC9 /* Rubik-ExtraBold.ttf */,
+				36C227D98009469AB62D5FC0 /* Rubik-Regular.ttf */,
+				27FCF51FEDAA46E196F18E6C /* BSBloggerSans_1.ttf */,
+				D8EF4C48507F406497028307 /* calibri.ttf */,
+				F90F79F58FD34928993F09C3 /* Rubik-BoldItalic.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* eCommerceApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +194,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				10B2485DC068434E89F1C905 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -161,6 +281,43 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				7156EBF7DB4C75CB6A0A380F /* PrivacyInfo.xcprivacy in Resources */,
+				67C1FB33C2AA4D6384B0C81C /* CTCSplashRoundedBold.otf in Resources */,
+				0FCFC7B074EA459CB868C679 /* Blogger_Sans-Light.otf in Resources */,
+				1CB95B4C4E90455DB93BFC90 /* Blogger_Sans-Bold.otf in Resources */,
+				EBE5D013386B4CEF97669F23 /* Blogger_Sans-Medium.otf in Resources */,
+				4470F3D3646E47E3AB9BEA26 /* CTCSplashRoundedRegularItalic.otf in Resources */,
+				07E76ED35B274F139CD8E007 /* Blogger_Sans.otf in Resources */,
+				E57CA1B26B074BAFA332650B /* Blogger_Sans-Light_Italic.otf in Resources */,
+				17EDB9A1DD30416CB6B9998E /* Blogger_Sans-Medium_Italic.otf in Resources */,
+				40B55306379F4F0496843FEF /* CTCSplashRoundedRegular.otf in Resources */,
+				9A3C0288F4264A42A4D4ADDB /* Blogger_Sans-Italic.otf in Resources */,
+				EC5A9EC55B4945DA94258EEE /* CTCSplashRoundedBoldItalic.otf in Resources */,
+				B0D07CEB53044D1B81A33D78 /* Blogger_Sans-Bold_Italic.otf in Resources */,
+				0834FF924AE346C7AA25B1F8 /* Rubik-MediumItalic.ttf in Resources */,
+				97BBE73E6B7D483597ED8038 /* BSBloggerSans.ttf in Resources */,
+				9521396CD7384DA78D6FD41E /* Rubik-Bold.ttf in Resources */,
+				AB406FF75CC24F07B9CBF5A3 /* calibriregularitalic.ttf in Resources */,
+				0C286CDBB94946A88B3D2700 /* calibrilight.ttf in Resources */,
+				A11453B513844CD19ABC6CEC /* calibribold.ttf in Resources */,
+				6EFA45C6307E47E683C66240 /* calibriregular.ttf in Resources */,
+				3FB573FCFE6A421883BA7458 /* Rubik-SemiBoldItalic.ttf in Resources */,
+				7F506607138C4C448F7A8C35 /* calibrilightitalic.ttf in Resources */,
+				9835B85BD41F4C2C85A9485B /* Rubik-Light.ttf in Resources */,
+				6560F239C9E44C54B24C08D0 /* Rubik-Medium.ttf in Resources */,
+				3E31771E56B240A7B9EE2A1F /* Rubik-ExtraBoldItalic.ttf in Resources */,
+				F33222EBB8B24EDAB6535987 /* Rubik-Black.ttf in Resources */,
+				A13751EAA9B94737B3ED0858 /* Rubik-Italic.ttf in Resources */,
+				F5EE295684C44006ABA071F8 /* Rubik-LightItalic.ttf in Resources */,
+				CB973A0E6EC34687A1F1E663 /* calibribolditalic.ttf in Resources */,
+				10CE19B8C7E64AF38D075CAF /* Rubik-SemiBold.ttf in Resources */,
+				E9D47936E39C4BAF997D57EF /* Rubik-BlackItalic.ttf in Resources */,
+				98EE3E1E06E74082870F61B8 /* megafonts_inc.ttf in Resources */,
+				27EC411B48DB44459C5919FB /* calibri_bold.ttf in Resources */,
+				D665C543B630419CBEA925D0 /* Rubik-ExtraBold.ttf in Resources */,
+				834C2F7218E54CC28F0E5AB2 /* Rubik-Regular.ttf in Resources */,
+				E778DE5122C648A2BA917EEF /* BSBloggerSans_1.ttf in Resources */,
+				A5C5912720F84B3F997B735C /* calibri.ttf in Resources */,
+				3B9D008B047D400BBFE30756 /* Rubik-BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

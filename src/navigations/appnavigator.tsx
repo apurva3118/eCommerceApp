@@ -11,7 +11,12 @@ export default function AppNavigator() {
   return (
     <Stack.Navigator screenOptions={{
       headerShown: false,
-    }}>
+      statusBarStyle: 'dark',
+      statusBarTranslucent: true,
+      animation: 'slide_from_right',
+    }}
+
+    >
       <Stack.Screen
         name="MainTabs"
         component={BottomTabs}
