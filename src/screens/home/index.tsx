@@ -25,7 +25,7 @@ const Home = () => {
     <SafeAreaView style={styles.container}>
       <ScrollView
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ paddingBottom: 20 }}
+        contentContainerStyle={styles.gapBetween}
       >
         <Header
           name="John William"
@@ -51,13 +51,9 @@ const Home = () => {
           scrollEnabled={true}
           showsHorizontalScrollIndicator={false}
           keyExtractor={(item) => item.id}
-          contentContainerStyle={{
-            paddingHorizontal: 16,
-            paddingTop: 16,
-            gap: 12,
-          }}
+          contentContainerStyle={styles.containerStyle}
           renderItem={({ item }) => (
-            <Pressable style={{ width: 160 }}>
+            <Pressable style={styles.containerWidth}>
               <ProductCard
                 title={item.title}
                 price={item.price}
@@ -91,13 +87,9 @@ const Home = () => {
           scrollEnabled={true}
           showsHorizontalScrollIndicator={false}
           keyExtractor={(item) => item.id}
-          contentContainerStyle={{
-            paddingHorizontal: 16,
-            paddingTop: 16,
-            gap: 12,
-          }}
+          contentContainerStyle={styles.containerStyle}
           renderItem={({ item }) => (
-            <View style={{ width: 160 }}>
+            <View style={styles.containerWidth}>
               <ProductCard
                 title={item.title}
                 price={item.price}

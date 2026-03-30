@@ -7,9 +7,10 @@ export interface ICartItemProps {
         quantity?: number;
         image: any;
     };
-    showtrack?: boolean
-    quantity: number;
-    onIncreaseQty: () => void;
-    onDecreaseQty: () => void;
-    onRemove: () => void;
+    showtrack?: boolean;
+
+    quantity?: number;
+    onIncreaseQty?: () => void;
+    onDecreaseQty?: () => void;
+    onRemove?: () => void;
 }

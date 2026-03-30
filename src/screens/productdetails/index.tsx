@@ -18,11 +18,13 @@ import ButtonPrimary from '../../components/buttonprimary';
 import { Strings } from '../../constants/strings';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleWishlist } from '../../store/wishlistSlice';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 type ProductRouteProp = RouteProp<RootStackParamList, 'ProductDetails'>;
 
 const ProductDetails = () => {
-    const navigation = useNavigation();
+    type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
+    const navigation = useNavigation<NavigationProp>();
     const route = useRoute<ProductRouteProp>();
     const insets = useSafeAreaInsets();
 
@@ -32,7 +34,7 @@ const ProductDetails = () => {
 
     const isInWishlist = wishlistItems.includes(id);
     return (
-        <View style={{ flex: 1, backgroundColor: colors.white }}>
+        <View style={styles.mainSpace}>
             <ScrollView showsVerticalScrollIndicator={false}>
 
                 <View style={styles.imageWrapper}>
@@ -87,7 +89,7 @@ const ProductDetails = () => {
                             onPress={() => {
                             }}
                         />
-                        <TouchableOpacity style={styles.cartButton} >
+                        <TouchableOpacity style={styles.cartButton} onPress={() => navigation.navigate('MyCart')}>
                             <SvgXml xml={products} height={24} width={24} />
                         </TouchableOpacity>
                     </View>

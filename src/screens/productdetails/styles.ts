@@ -110,4 +110,8 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
+    mainSpace: {
+        flex: 1,
+        backgroundColor: colors.white
+    }
 });

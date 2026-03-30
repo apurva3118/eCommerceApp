@@ -45,11 +45,7 @@ const MyProfile = () => {
   };
   return (
     <SafeAreaView style={styles.container}>
-
-      {/* TOP CONTENT */}
       <View style={styles.topSection}>
-
-        {/* Header */}
         <View style={styles.header}>
           <Image
             source={{ uri: 'https://i.pravatar.cc/150?img=12' }}

@@ -25,4 +25,12 @@ export const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#5B4FD4',
   },
+  containerStyle: {
+    paddingHorizontal: 16,
+    paddingTop: 16,
+    gap: 12,
+  },
+  containerWidth: { width: 160 },
+  gapBetween: { paddingBottom: 20 }
+
 });

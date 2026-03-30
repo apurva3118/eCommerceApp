@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import BottomTabs from './bottomTabs';
 import SeeAllScreen from '../screens/seeall';
 import { RootStackParamList } from '../utils/linking';
-import { Checkout, Filters, Orders, SearchProducts, Settings } from '../screens';
+import { Checkout, Filters, MyCart, Orders, SearchProducts, Settings } from '../screens';
 import ProductDetails from '../screens/productdetails';
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -50,6 +50,10 @@ export default function AppNavigator() {
       <Stack.Screen
         name="Filters"
         component={Filters}
+      />
+      <Stack.Screen
+        name="MyCart"
+        component={MyCart}
       />
     </Stack.Navigator>
   );
