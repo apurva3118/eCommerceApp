@@ -17,6 +17,7 @@ import { AllProucts } from "../../constants/productdata";
 import { useDispatch } from "react-redux";
 import { increaseQty, decreaseQty, removeFromCart } from "../../store/cartSlice";
 import Typography from '../../components/typography';
+import { setSnackBar } from '../../store/snackbarSlice';
 
 const MyCart = () => {
   const dispatch = useDispatch();
@@ -52,9 +53,33 @@ const MyCart = () => {
                     key={item.id}
                     item={item}
                     quantity={item.quantity}
-                    onIncreaseQty={() => dispatch(increaseQty(item.id))}
-                    onDecreaseQty={() => dispatch(decreaseQty(item.id))}
-                    onRemove={() => dispatch(removeFromCart(item.id))}
+                    onIncreaseQty={() => {
+                      dispatch(increaseQty(item.id))
+                      dispatch(
+                        setSnackBar({
+                          message: 'Product added to cart',
+                          variant: 'success',
+                        })
+                      );
+                    }}
+                    onDecreaseQty={() => {
+                      dispatch(decreaseQty(item.id))
+                      dispatch(
+                        setSnackBar({
+                          message: 'Product quantity updated in cart',
+                          variant: 'success',
+                        })
+                      );
+                    }}
+                    onRemove={() => {
+                      dispatch(removeFromCart(item.id))
+                      dispatch(
+                        setSnackBar({
+                          message: 'Product removed from the  cart',
+                          variant: 'success',
+                        })
+                      );
+                    }}
                   />
                 )
             )}

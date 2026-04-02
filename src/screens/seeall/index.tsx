@@ -13,6 +13,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../store';
 import { toggleWishlist } from '../../store/wishlistSlice';
 import { addToCart, increaseQty, decreaseQty } from '../../store/cartSlice';
+import { setSnackBar } from '../../store/snackbarSlice';
 
 const SeeAllScreen = () => {
   const wishlist = useSelector((state: RootState) => state.wishlist.items);
@@ -46,10 +47,34 @@ const SeeAllScreen = () => {
           isInCart={!!cartItem}
           isWishlisted={wishlist.includes(item.id)}
           onToggleWishlist={() => dispatch(toggleWishlist(item.id))}
-          onAddToCart={() => dispatch(addToCart(item.id))}
+          onAddToCart={() => {
+            dispatch(addToCart(item.id));
+            dispatch(
+              setSnackBar({
+                message: 'Product added to cart',
+                variant: 'success',
+              })
+            );
+          }}
           quantity={cartItem?.quantity}
-          onIncreaseQty={() => dispatch(increaseQty(item.id))}
-          onDecreaseQty={() => dispatch(decreaseQty(item.id))}
+          onIncreaseQty={() => {
+            dispatch(increaseQty(item.id))
+            dispatch(
+              setSnackBar({
+                message: 'Product quantity updated to cart',
+                variant: 'success',
+              })
+            );
+          }}
+          onDecreaseQty={() => {
+            dispatch(decreaseQty(item.id))
+            dispatch(
+              setSnackBar({
+                message: 'Product quantity updated to cart',
+                variant: 'success',
+              })
+            );
+          }}
         />
       </View>
     );

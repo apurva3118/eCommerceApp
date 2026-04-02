@@ -1,6 +1,7 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import wishlistReducer from "./wishlistSlice";
 import cartReducer from "./cartSlice";
+import snackbarReducer from "./snackbarSlice";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
     persistStore,
@@ -10,6 +11,7 @@ import {
 const rootReducer = combineReducers({
     wishlist: wishlistReducer,
     cart: cartReducer,
+    snackbar: snackbarReducer,
 });
 
 const persistConfig = {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     View,
     Image,
@@ -23,6 +23,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 type ProductRouteProp = RouteProp<RootStackParamList, 'ProductDetails'>;
 
 const ProductDetails = () => {
+    const [selectedSize, setSelectedSize] = useState<string | null>(null);
     type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
     const navigation = useNavigation<NavigationProp>();
     const route = useRoute<ProductRouteProp>();
@@ -74,12 +75,34 @@ const ProductDetails = () => {
 
                         <Typography style={styles.sectionTitle}>Size</Typography>
                         <View style={styles.sizeRow}>
-                            {['8', '10', '38', '40'].map((size, index) => (
-                                <Pressable key={index} style={styles.sizeBox}>
-                                    <Typography style={styles.sizeText}>{size}</Typography>
-                                </Pressable>
-                            ))}
+                            {['8', '10', '38', '40'].map((size, index) => {
+                                const isSelected = selectedSize === size;
+
+                                return (
+                                    <Pressable
+                                        key={index}
+                                        style={[
+                                            styles.sizeBox,
+                                            isSelected && {
+                                                backgroundColor: colors.primaryColor,
+                                                borderColor: colors.primaryColor,
+                                            },
+                                        ]}
+                                        onPress={() => setSelectedSize(size)}
+                                    >
+                                        <Typography
+                                            style={[
+                                                styles.sizeText,
+                                                isSelected && { color: colors.white },
+                                            ]}
+                                        >
+                                            {size}
+                                        </Typography>
+                                    </Pressable>
+                                );
+                            })}
                         </View>
+
 
                     </View>
                     <View style={styles.bottomBar}>
